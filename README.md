@@ -6,5 +6,6 @@ CListCtrlEx
 表头的高度、背景色（带渐变），字体大小、颜色。
 行、列和单元格的高度、背景色，字体大小、颜色。
 
-效果图1：![Renderings](https://raw.githubusercontent.com/sj969/CListCtrlEx/master/CListCtrlEx.png)
-效果图2：![Renderings](https://raw.githubusercontent.com/sj969/CListCtrlEx/master/CListCtrlEx-0.png)
+![Renderings](https://raw.githubusercontent.com/sj969/CListCtrlEx/master/CListCtrlEx.png)
+
+![Renderings](https://raw.githubusercontent.com/sj969/CListCtrlEx/master/CListCtrlEx-0.png)
