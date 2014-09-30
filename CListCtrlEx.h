@@ -14,28 +14,28 @@ class CListCtrlEx : public CListCtrl
 {
 	DECLARE_DYNAMIC(CListCtrlEx)
 
+protected:
+	DECLARE_MESSAGE_MAP()
+	virtual void PreSubclassWindow();
+
 public:
 	CHeaderCtrlEx m_Header;
 	CListCtrlEx();
 	virtual ~CListCtrlEx();
 
-protected:
-	DECLARE_MESSAGE_MAP()
-	virtual void PreSubclassWindow();
-public:
 	virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
-public:
+
 	afx_msg void OnMeasureItem(int nIDCtl, LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 	void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
-public:
+
 	// 行高
 	int m_nRowHeight;
 	int InsertColumn(int nCol, LPCTSTR lpszColumnHeading,
 		int nFormat = LVCFMT_LEFT, int nWidth = -1, int nSubItem = -1);
-public:
+
 	// Gradient - 渐变系数，立体背景用,不用渐变设为0
 	void SetHeaderBackColor(int R, int G, int B, int Gradient);
-public:
+
 	// 设置表头高度
 	void SetHeaderHeight(float Height);
 	CPtrList m_ptrListCol;  //保存列颜色
@@ -56,10 +56,10 @@ public:
 	COLORREF m_color;
 	BOOL SetTextColor(COLORREF cr);
 	void SetFontSize(int nHeight,int nWith);  //设置字体的高和宽
-public:
+
 	// 字体高度
 	int m_fontHeight;
-public:
+
 	// 字体宽度
 	int m_fontWith;
 };

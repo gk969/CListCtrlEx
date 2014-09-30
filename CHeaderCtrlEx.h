@@ -7,17 +7,17 @@ class CHeaderCtrlEx : public CHeaderCtrl
 {
 	DECLARE_DYNAMIC(CHeaderCtrlEx)
 
+protected:
+	DECLARE_MESSAGE_MAP()
+
 public:
 	CHeaderCtrlEx();
 	virtual ~CHeaderCtrlEx();
 
-protected:
-	DECLARE_MESSAGE_MAP()
-public:
 	afx_msg void OnPaint();
 	CStringArray m_HChar;
 	CString m_Format; //表示对齐类型的整型数组,0表示左对齐，1表示中间对齐，2表示右对齐
-public:
+
 	int m_R;
 	int m_G;
 	int m_B;
